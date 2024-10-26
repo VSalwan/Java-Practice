@@ -13,17 +13,16 @@ class student{
         System.out.println(this.age);    
     }
     //constructor
-    student(){
-        System.out.println("Constructor Called");
+    student(String name, int age){
+        this.name=name;
+        this.age=age;
     }
         
 }
 class constr{
     public static void main(String args[])
     {
-        student s1=new student();
-        s1.name="Vishvam Salwan";
-        s1.age=23;
+        student s1=new student("Vishvam Salwan",23);
         s1.printInfo();
 
     }
